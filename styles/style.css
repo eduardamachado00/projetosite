@@ -2,7 +2,7 @@
 :root{
     --cor-um: #000;
     --cor-dois: #f6f6f6;
-    --cor-tres: #22d4fd;
+    --cor-tres: rgb(114, 165, 90);
     --fonte-titulo:'Krona One', sans-serif;
     --fonte-corpo:'Montserrat', sans-serif;
 }
@@ -59,8 +59,10 @@ p{
 }
 
 .intro{
+    box-sizing: border-box;
     padding: 5% 15%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     gap: 80px;
 }
@@ -80,7 +82,11 @@ p{
 
 .imagem{
     width: 50%;
-    padding: 5%;
+}
+
+.imagemh{
+    width: 50%;
+    transform: scale(0.7);
 }
 
 .texto{
@@ -156,6 +162,9 @@ h2{
         gap: 80px;
     }
     .imagem{
+        width: auto;
+    }
+    .imagemh{
         width: auto;
     }
     .texto{
