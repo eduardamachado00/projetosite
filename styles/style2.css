@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Krona+One&family=Montserrat&display=swap');
 :root{
-    --cor-um: #000;
-    --cor-dois: #f6f6f6;
-    --cor-tres: #22d4fd;
-    --cor-quatro: rgb(114, 165, 90);
+    --cor-dois: #000;
+    --cor-tres: #f6f6f6;
+    --cor-um: rgb(114, 165, 90);
     --fonte-titulo:'Krona One', sans-serif;
     --fonte-corpo:'Montserrat', sans-serif;
 }
@@ -49,8 +48,8 @@ body{
 
 .titulo{
     font-family: var(--fonte-titulo);
-    font-size: 2.25rem;
-    font-weight: 400;
+    font-size: 3rem;
+    font-weight: 600;
 }
 
 p{
@@ -83,6 +82,7 @@ p{
 
 .imagem{
     width: 50%;
+    transform: scale(0.8);
 }
 
 
