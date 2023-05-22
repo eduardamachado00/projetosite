@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Krona+One&family=Montserrat&display=swap');
+:root{
+    --cor-um: #000;
+    --cor-dois: #f6f6f6;
+    --cor-tres: #22d4fd;
+    --fonte-titulo:'Krona One', sans-serif;
+    --fonte-corpo:'Montserrat', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 2% 0% 0% 10%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+    justify-content: left;
+    gap: 80px;
+}
+
+.linknav{
+    color:var(--cor-tres);
+    text-decoration: none;
+   
+}
+
+.linknav:hover{
+    transform: scale(1.15);
+}
+
+body{
+    box-sizing: border-box;
+    font-family: var(--fonte-corpo);
+    background: var(--cor-um);
+    color: var(--cor-dois);
+}
+
+.titulo-destaque{
+    font-weight: 400;
+    color: var(--cor-tres);
+}
+
+.titulo{
+    font-family: var(--fonte-titulo);
+    font-size: 2.25rem;
+    font-weight: 400;
+}
+
+p{
+    font-size: 1.5rem;
+    line-height: 36px;
+    text-align: justify;
+}
+
+.intro{
+    padding: 5% 15%;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+}
+
+.game{
+    padding: 5% 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+}
+
+.tela{
+    width: 100%;
+    height: 39vw;
+}
+
+.imagem{
+    width: 50%;
+    padding: 2%;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    gap: 40px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 47px;
+    gap: 32px;
+}
+
+h2{
+    text-align: justify;
+    font-family:var(--fonte-titulo);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.botao{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    background-color: var(--cor-um);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 36px;
+    color: var(--cor-dois);
+    border: 2px solid var(--cor-tres);
+    border-radius: 8px;
+    text-align: center;
+    width: 50%;
+    padding: 16px 0px;
+}
+
+.botao:hover{
+    background-color: #272727;
+}
+
+.rodape{
+    background-color: var(--cor-tres);
+    color: var(--cor-um);
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 23.64px;
+}
+
+@media (max-width: 1200px){
+    header{
+        padding: 10% 0% 10% 0%;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+    }
+    .intro{
+        padding: 5% ;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 80px;
+    }
+    .imagem{
+        width: auto;
+    }
+    .texto{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: auto;
+        gap: 40px;
+    }
+}
