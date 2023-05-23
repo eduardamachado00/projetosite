@@ -133,12 +133,20 @@ h2{
     background-color: #272727;
 }
 
-.rodape{
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--cor-tres);
-    color: var(--cor-um);
-    text-align: center;
+    padding: 1%;
+}
+.rodape{
     font-size: 1.5rem;
-    padding: 23.64px;
+    color: var(--cor-um);
+}
+.cred{
+    color: var(--cor-um);
+    text-decoration: none;
 }
 
 @media (max-width: 1200px){
